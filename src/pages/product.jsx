@@ -41,9 +41,9 @@ function Product() {
   return (
     <div>
       <section>
-        <div className='flex justify-between items-center'>
-          <h1 className='text-3xl my-5 align-middle producttext'>Product List</h1>
-        </div>
+       <div className='product-header'>
+           <h1 className='producttext'>Product List</h1>
+       </div>
         <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 -mt-8">
           {product ?( product.map((item) => (
             <TemplateProps key={item.id} prop={item} />

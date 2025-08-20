@@ -4,35 +4,7 @@ import { useEffect, useState } from 'react'
 import Order from '../component/orderData';
 const Home = () => {
   const [product, setProduct] = useState([]);
-   useEffect(()=>{
- 
-     const fetchdata = async () => {
-       await fetch('').then((response)=>{
-       if (response.ok) {
-         return response.json()
-         
-       } else {
-         throw new Error('network response error')
-         
-       }
-     }).then((data)=>{
-       if (!data) {
-         throw new Error('data error')
-         
-       } else {
-        console.log(data)
-       setProduct(data)
-       }
-
-      
-     })
-       
-     }
-     fetchdata();
-     
-    
-   }, [])
-  
+   
   return (
     // This is the home page component
     <div class='min-h-screen bg-base-100 text-center imageurl'>

@@ -70,7 +70,7 @@ export default function Order() {
             className="mb-2 w-full p-2 border rounded"
           />
           <input
-            type="address"
+            type="text"
             placeholder="promo code"
             value={promocode}
             onChange={e => setprmocode(e.target.value)}
