@@ -5,7 +5,7 @@ function About() {
     <div class='about grid grid-cols-1 grid-rows-4'>
       <h1>About Us</h1>
       <p>
-        At George's, we are determined to provide you with a soul-refreshing drink. Nothing beats our quality distilled products, crafted with passion and expertise.
+        At Wines, we are determined to provide you with a soul-refreshing drink. Nothing beats our quality distilled products, crafted with passion and expertise.
       </p>
       <p>
         Our story began with a simple goal: to bring people together over exceptional wine and spirits. Every bottle is a testament to our commitment to excellence, sustainability, and customer satisfaction.

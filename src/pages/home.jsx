@@ -12,13 +12,13 @@ const Home = () => {
         <div class="hero-content text-center -m-1.5">
           <div class="max-w-md">
             <h1 class="text-5xl font-extrabold text-primary wines animated-3d visual" >
-              George`s Wines
+              Wines
             </h1>
             <p
               class="py-6 text-base-content text-2xl visual2"
       
             >
-              Welcome to George`s <br/> what would you like to have today
+              Welcome to wines <br/> what would you like to have today
             </p>
           </div>
         </div>

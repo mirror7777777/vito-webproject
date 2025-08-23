@@ -1,5 +1,5 @@
 import { useState, } from 'react'
-import {createBrowserRouter , RouterProvider, Router} from 'react-router-dom'
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import RootLayout from './layout/rootLayout'
 import Home from './pages/home'
 import ProductLayout from './layout/productLayout'
@@ -11,57 +11,28 @@ import AboutLayout from './layout/aboutLayout'
 
 
 function App() {
-  const router = createBrowserRouter([
-
-
-
-    {
-      path :'/',
-      element: <RootLayout/>,
-      children:[{ 
-      index: true,
-      element: <Home/>
-      }, 
-    ]
-      
-  
-    },
-    {
-      path : '/product',
-      element : <ProductLayout/>,
-      children: [{
-        index : true,
-        element: <Product/>
-      },]
-    },
-    {
-      path : '/contact',
-      element: <ContactLayout/>,
-      children: [{
-        index : true,
-        element : <Contact/>
-      },]
-    },
-    {
-      path : '/about',
-      element : <AboutLayout/>,
-      children: [{
-        index : true,
-        element : <About/>
-    }]
-    }
-
- 
-
-  
-
-
-])
-
 
   return (
     <>
-    <RouterProvider router={router}/>
+    <BrowserRouter basename='/vito-webproject/'>
+    <Routes>
+      <Route path='/' element={<RootLayout/>}>
+      <Route index element={<Home/>}/>
+      </Route>
+       <Route path='/about' element={<AboutLayout/>}>
+      <Route index element={<About/>}/>
+      </Route>
+        <Route path='/product' element={<ProductLayout/>}>
+      <Route index element={<Product/>}/>
+      </Route>
+         <Route path='/contact' element={<ContactLayout/>}>
+      <Route index element={<Contact/>}/>
+      </Route>
+
+    </Routes>
+    
+    </BrowserRouter>
+    
     
     </>
   )
